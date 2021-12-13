@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Create a Review</h1>
+    <h1>Make a Payment</h1>
   </div>
 </template>
 
