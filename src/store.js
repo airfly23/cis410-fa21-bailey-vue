@@ -1,10 +1,10 @@
 import { createStore } from "vuex";
-
+import axios from "axios";
 export default createStore({
   state: {
     token: null,
     user: null,
-    gymClass: [],
+    gym: [],
   },
   mutations: {
     storeTokenInApp(state, myToken) {
@@ -13,6 +13,16 @@ export default createStore({
     storeUserInApp(state, theUser) {
       state.user = theUser;
     },
+    storeGym(state, gym) {
+      state.gym = gym;
+    },
   },
-  actions: {},
+  actions: {
+    getGym({ commit }) {
+      axios.get("/gym").then((aResponse) => {
+        console.log("response in /gym", aResponse);
+        commit("storeGym", aResponse.data);
+      });
+    },
+  },
 });

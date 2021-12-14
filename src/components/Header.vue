@@ -22,7 +22,7 @@
               class="nav-link active"
               aria-current="page"
               to="/movies"
-              >Movies</router-link
+              >Gyms</router-link
             >
           </li>
 
