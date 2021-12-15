@@ -16,6 +16,9 @@ export default {
   components: {
     "my-header": Header,
   },
+  created() {
+    this.$store.dispatch("getGym");
+  },
 };
 </script>
 
