@@ -22,6 +22,10 @@
         Sign in to Make a Payment
       </button></router-link
     >
+    <br />
+    <br />
+
+    <router-view />
   </div>
 </template>
 
